@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quad Gym - Sculpt. Transform. Conquer.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header" id="site-header">
+        <div class="nav-container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo" aria-label="Quad Gym Home">
+                <div class="logo-box">
+                           <img src="assets/logo.png" alt="logo of Quad Gym">
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About us</a></li>
+                    <li><a href="#training" class="nav-link">Training</a></li>
+                    <li><a href="#membership" class="nav-link">Membership</a></li>
+                    <li><a href="#trainers" class="nav-link">Trainers</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Right CTA Button -->
+            <div class="nav-actions">
+                <a href="#get-started" class="btn btn-nav">
+                    <span>LET'S GET STARTED</span>
+                    <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Animated Hamburger Button -->
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu-panel">
+                <span class="hamburger-line line-1"></span>
+                <span class="hamburger-line line-2"></span>
+                <span class="hamburger-line line-3"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= MOBILE MENU OVERLAY & PANEL ================= -->
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel" id="mobile-menu-panel" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+        <div class="mobile-menu-inner">
+            <!-- Mobile Menu Header -->
+            <div class="mobile-menu-header">
+                <a href="#" class="brand-logo" id="mobile-brand-logo">
+                    <div class="logo-box">
+                        <img src="assets/logo.png" alt="logo of Quad Gym">
+                    </div>
+                </a>
+
+                <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Navigation Links -->
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li>
+                        <a href="#about" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-circle-info"></i> About us</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#training" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-dumbbell"></i> Training</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#membership" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-id-card"></i> Membership</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#trainers" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-users"></i> Trainers</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#gallery" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-images"></i> Gallery</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Action Button -->
+            <div class="mobile-menu-cta">
+                <a href="#get-started" class="btn btn-mobile-cta">
+                    <span>LET'S GET STARTED</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Footer Info -->
+            <div class="mobile-menu-footer">
+                <div class="mobile-social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" id="hero">
+        <!-- Background Image Container -->
+        <div class="hero-bg-wrapper">
+            <img src="assets/herobg.jpg" alt="Quad Gym Training Zone" class="hero-bg-img">
+            <!-- Left solid-to-transparent fade + subtle dark shade over right image -->
+            <div class="hero-gradient-overlay"></div>
+            <!-- Vertical vignette for smooth edge transitions -->
+            <div class="hero-vignette-overlay"></div>
+        </div>
+
+        <!-- Hero Main Content -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Location Tag -->
+                <div class="hero-tag">
+                    <span class="tag-square"></span>
+                    <span class="tag-text">QUAD GYM &bull; SUBHASH PALLY, WEST BENGAL</span>
+                </div>
+
+                <!-- Main Punchline Heading -->
+                <h1 class="hero-title">
+                    <span class="title-line title-white">SCULPT.</span>
+                    <span class="title-line title-white">TRANSFORM.</span>
+                    <span class="title-line title-orange">CONQUER.</span>
+                </h1>
+
+                <!-- Subtitle Description -->
+                <p class="hero-desc">
+                    Show up for yourself. Build your strength, find your rhythm, and take your next step with Quad Gym.
+                </p>
+
+                <!-- Action Button Group -->
+                <div class="hero-buttons">
+                    <a href="#membership" class="btn btn-primary">
+                        <span>FIND YOUR MEMBERSHIP</span>
+                       <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>LET'S TALK</span>
+                       <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom-right Floating Motto/Quote -->
+            <div class="hero-bottom-quote">
+                <div class="quote-accent-bar"></div>
+                <div class="quote-text-group">
+                    <span class="quote-line">STRENGTH STARTS HERE.</span>
+                    <span class="quote-line">YOUR JOURNEY, YOUR PACE.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SEAMLESS LOOP MARQUEE TRACK ================= -->
+    <section class="marquee-section" aria-label="Core Highlights">
+        <div class="marquee-track">
+            <!-- First track slice -->
+            <div class="marquee-group">
+                <div class="marquee-item">
+                    <span class="item-text">STRENGTH WITH PURPOSE</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+                <div class="marquee-item">
+                    <span class="item-text">TRAIN WITH CONFIDENCE</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+                <div class="marquee-item">
+                    <span class="item-text">PROGRESS EVERY DAY</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+                <div class="marquee-item">
+                    <span class="item-text">QUAD GYM</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+            </div>
+
+            <!-- Second track slice (identical duplicate for seamless infinite loop) -->
+            <div class="marquee-group" aria-hidden="true">
+                <div class="marquee-item">
+                    <span class="item-text">STRENGTH WITH PURPOSE</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+                <div class="marquee-item">
+                    <span class="item-text">TRAIN WITH CONFIDENCE</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+                <div class="marquee-item">
+                    <span class="item-text">PROGRESS EVERY DAY</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+                <div class="marquee-item">
+                    <span class="item-text">QUAD GYM</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+            </div>
+
+            <!-- Third track slice to guarantee continuous seamlessness on extra-wide screens -->
+            <div class="marquee-group" aria-hidden="true">
+                <div class="marquee-item">
+                    <span class="item-text">STRENGTH WITH PURPOSE</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+                <div class="marquee-item">
+                    <span class="item-text">TRAIN WITH CONFIDENCE</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+                <div class="marquee-item">
+                    <span class="item-text">PROGRESS EVERY DAY</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+                <div class="marquee-item">
+                    <span class="item-text">QUAD GYM</span>
+                    <i class="fa-solid fa-asterisk item-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main JavaScript File -->
+    <script src="script/script.js"></script>
+</body>
+</html>
