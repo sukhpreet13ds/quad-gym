@@ -7,6 +7,11 @@
     .hero-title {
         font-size: 82px;
     }
+
+    .section-heading-dark,
+    .section-heading-light {
+        font-size: 72px;
+    }
 }
 
 /* EXTRA LARGE DESKTOPS */
@@ -14,8 +19,19 @@
     .hero-title {
         font-size: 78px;
     }
+
     .hero-bg-wrapper {
         width: 64%;
+    }
+
+    .section-heading-dark,
+    .section-heading-light {
+        font-size: 68px;
+    }
+
+    .about-container,
+    .pt-container {
+        gap: 50px;
     }
 }
 
@@ -48,6 +64,77 @@
 
     .hero-bg-wrapper {
         width: 62%;
+    }
+
+    .section-container {
+        padding: 85px 32px;
+    }
+
+    .section-heading-dark,
+    .section-heading-light {
+        font-size: 62px;
+    }
+
+    .about-container,
+    .pt-container {
+        gap: 45px;
+    }
+
+    .training-cards-grid {
+        gap: 22px;
+    }
+
+    .training-card-img-wrap {
+        height: 300px;
+    }
+
+    .steps-grid {
+        gap: 30px;
+    }
+
+    .pricing-grid {
+        gap: 16px;
+    }
+
+    .pricing-card {
+        padding: 30px 22px;
+    }
+
+    .pricing-amount {
+        font-size: 46px;
+    }
+
+    .trainers-grid {
+        gap: 30px;
+    }
+
+    .trainer-img-wrap {
+        height: 420px;
+    }
+
+    .energy-card {
+        height: 350px;
+    }
+
+    .cta-banner-title {
+        font-size: 66px;
+    }
+
+    .faq-container {
+        gap: 50px;
+    }
+
+    .visit-container {
+        gap: 50px;
+    }
+
+    .contact-banner-card {
+        padding: 48px;
+        gap: 40px;
+    }
+
+    .contact-banner-heading {
+        font-size: 58px;
     }
 }
 
@@ -94,6 +181,117 @@
     .item-text {
         font-size: 18px;
     }
+
+    .section-container {
+        padding: 70px 24px;
+    }
+
+    .section-heading-dark,
+    .section-heading-light {
+        font-size: 54px;
+    }
+
+    .about-container,
+    .pt-container {
+        gap: 36px;
+    }
+
+    .training-cards-grid {
+        gap: 18px;
+    }
+
+    .training-card-img-wrap {
+        height: 260px;
+    }
+
+    .steps-grid {
+        gap: 24px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .trainers-grid {
+        gap: 24px;
+    }
+
+    .trainer-img-wrap {
+        height: 380px;
+    }
+
+    .energy-scroll-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
+        scrollbar-width: none;
+    }
+
+    .energy-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .energy-grid {
+        display: flex;
+        width: max-content;
+        gap: 16px;
+    }
+
+    .energy-card {
+        flex: 0 0 280px;
+        width: 280px;
+        height: 360px;
+        scroll-snap-align: start;
+    }
+
+    .testimonials-scroll-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
+        scrollbar-width: none;
+    }
+
+    .testimonials-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .testimonials-grid {
+        display: flex;
+        width: max-content;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        flex: 0 0 290px;
+        width: 290px;
+        height: 500px;
+        scroll-snap-align: start;
+    }
+
+    .cta-banner-title {
+        font-size: 58px;
+    }
+
+    .faq-container {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 40px;
+    }
+
+    .visit-container {
+        gap: 40px;
+    }
+
+    .contact-banner-card {
+        padding: 40px;
+        gap: 36px;
+    }
+
+    .contact-banner-heading {
+        font-size: 50px;
+    }
 }
 
 /* 3. PORTRAIT TABLETS (Separate) */
@@ -133,13 +331,11 @@
     }
 
     .hero-gradient-overlay {
-        background: linear-gradient(
-            to top,
-            #000000 0%,
-            rgba(0, 0, 0, 0.95) 20%,
-            rgba(0, 0, 0, 0.75) 50%,
-            rgba(0, 0, 0, 0.55) 100%
-        );
+        background: linear-gradient(to top,
+                #000000 0%,
+                rgba(0, 0, 0, 0.95) 20%,
+                rgba(0, 0, 0, 0.75) 50%,
+                rgba(0, 0, 0, 0.55) 100%);
     }
 
     .hero-container {
@@ -161,6 +357,245 @@
 
     .hero-bottom-quote {
         margin-top: 10px;
+    }
+
+    .section-container {
+        padding: 70px 24px;
+    }
+
+    .section-header-split {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        margin-bottom: 35px;
+    }
+
+    .section-heading-dark,
+    .section-heading-light {
+        font-size: 52px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image-col {
+        max-width: 600px;
+    }
+
+    .training-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .pt-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .pt-image-col {
+        max-width: 600px;
+    }
+
+    .trainers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .trainer-img-wrap {
+        height: 360px;
+    }
+
+    .energy-scroll-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
+        scrollbar-width: none;
+    }
+
+    .energy-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .energy-grid {
+        display: flex;
+        width: max-content;
+        gap: 16px;
+    }
+
+    .energy-card {
+        flex: 0 0 280px;
+        width: 280px;
+        height: 350px;
+        scroll-snap-align: start;
+    }
+
+    .testimonials-scroll-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
+        scrollbar-width: none;
+    }
+
+    .testimonials-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .testimonials-grid {
+        display: flex;
+        width: max-content;
+        gap: 18px;
+    }
+
+    .testimonial-card {
+        flex: 0 0 280px;
+        width: 280px;
+        height: 480px;
+        scroll-snap-align: start;
+    }
+
+    .cta-banner-container {
+        padding: 75px 24px;
+    }
+
+    .cta-banner-title {
+        font-size: 52px;
+    }
+
+    .faq-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .visit-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .contact-banner-section {
+        padding: 0 24px 50px;
+    }
+
+    .contact-banner-card {
+        grid-template-columns: 1fr;
+        padding: 40px 30px;
+        gap: 36px;
+    }
+
+    .contact-banner-heading {
+        font-size: 52px;
+    }
+
+    .btn-primary,
+    .btn-outline,
+    .section-subtext-light,
+    .btn-cta-white,
+    .btn-visit-dark,
+    .btn-whatsapp-submit {
+        font-size: 18px;
+    }
+
+    .image-floating-badge {
+        font-size: 14px;
+    }
+
+    .about-text-group p,
+    .text-link-dark {
+        font-size: 18px;
+    }
+
+    .stat-label {
+        font-size: 16px;
+    }
+
+    .training-card-img-wrap {
+        height: 195px;
+    }
+
+    .training-card-title {
+        font-size: 24px;
+    }
+
+    .training-card-desc {
+        font-size: 16px;
+    }
+
+    .training-card-info {
+        padding: 24px 16px;
+    }
+
+    .section-subtext-dark,
+    .pt-desc {
+        font-size: 18px;
+    }
+
+    .pricing-footer-note {
+        font-size: 16px;
+    }
+
+    .image-floating-badge-dark {
+        left: 15px;
+    }
+
+    .trainer-name {
+        font-size: 26px;
+    }
+
+    .trainer-role {
+        font-size: 15px;
+    }
+
+    .energy-badge span {
+        font-size: 18px;
+    }
+
+    .cta-banner-subtext {
+        font-size: 18px;
+    }
+
+    .visit-subtext {
+        font-size: 18px;
+    }
+
+    .visit-card-address {
+        font-size: 18px
+    }
+
+    .contact-address-block {
+        font-size: 18px;
+    }
+
+    .back-to-top-link {
+        font-size: 10px;
+    }
+
+    .footer-motto-main {
+        font-size: 13px;
+    }
+
+    .footer-bottom-row {
+        font-size: 11px;
+    }
+
+    .mobile-nav-link {
+        font-size: 20px;
+    }
+
+    .visit-maps-link {
+        font-size: 16px
     }
 }
 
@@ -192,6 +627,10 @@
 
     .mobile-menu-header .logo-box img {
         height: 38px;
+    }
+
+    .footer-logo img {
+        height: 70px !important;
     }
 
     .logo-letters {
@@ -254,15 +693,13 @@
     }
 
     .hero-gradient-overlay {
-        background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.35) 32%,
-            rgba(0, 0, 0, 0.7) 54%,
-            rgba(0, 0, 0, 0.95) 74%,
-            #000000 90%,
-            #000000 100%
-        );
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.2) 0%,
+                rgba(0, 0, 0, 0.35) 32%,
+                rgba(0, 0, 0, 0.7) 54%,
+                rgba(0, 0, 0, 0.95) 74%,
+                #000000 90%,
+                #000000 100%);
     }
 
     .hero-container {
@@ -284,7 +721,6 @@
     .tag-text {
         font-size: 12px;
         letter-spacing: 1.5px;
-        color: #ffffffe5;
     }
 
     .hero-title {
@@ -346,8 +782,367 @@
     .item-star {
         font-size: 12px;
     }
+
     .btn-mobile-cta {
-font-size: 18px;
+        font-size: 18px;
+    }
+
+    /* 5 New Sections Mobile */
+    .section-container {
+        padding: 60px 18px;
+    }
+
+    .section-header-split {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 30px;
+    }
+
+    .section-heading-dark,
+    .section-heading-light {
+        font-size: 42px;
+        line-height: 0.98;
+        margin-bottom: 16px;
+    }
+
+    .section-subtext-dark,
+    .section-subtext-light {
+        font-size: 14.5px;
+        line-height: 1.55;
+    }
+
+    /* Section 1 Mobile */
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-stats-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 25px;
+    }
+
+    .stat-number {
+        font-size: 50px;
+    }
+
+    .image-floating-badge {
+        bottom: 14px;
+        left: 14px;
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    /* Section 2 Mobile */
+    .training-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .training-card-img-wrap {
+        height: 250px;
+    }
+
+    .training-card-info {
+        padding: 20px;
+    }
+
+    .training-card-title {
+        font-size: 24px;
+    }
+
+    .training-footer-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    /* Section 3 Mobile */
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .step-num {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .step-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    /* Section 4 Mobile */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .pricing-card {
+        padding: 26px 20px;
+        min-height: auto;
+    }
+
+    .pricing-amount {
+        font-size: 42px;
+    }
+
+    .pricing-footer-note {
+        margin-top: 30px;
+        font-size: 12px;
+    }
+
+    /* Section 5 Mobile */
+    .pt-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .image-floating-badge-dark {
+        bottom: 14px;
+        left: 14px;
+        padding: 10px 14px;
+    }
+
+    .pt-checklist li {
+        font-size: 14px;
+    }
+
+    .btn-pt {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+
+    /* Section 6 Trainers Mobile */
+    .trainers-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .trainer-img-wrap {
+        height: 360px;
+    }
+
+    .trainer-name {
+        font-size: 24px;
+    }
+
+    /* Section 7 Energy Mobile - Horizontal Scroll */
+    .energy-scroll-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
+        scrollbar-width: none;
+    }
+
+    .energy-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .energy-grid {
+        display: flex;
+        width: max-content;
+        gap: 14px;
+    }
+
+    .energy-card {
+        flex: 0 0 360px;
+        width: 260px;
+        height: 330px;
+        scroll-snap-align: start;
+    }
+
+    /* Section 8 Testimonials Mobile - Horizontal Scroll */
+    .testimonials-scroll-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
+        scrollbar-width: none;
+    }
+
+    .testimonials-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .testimonials-grid {
+        display: flex;
+        width: max-content;
+        gap: 14px;
+    }
+
+    .testimonial-card {
+        flex: 0 0 260px;
+        width: 260px;
+        height: 460px;
+        scroll-snap-align: start;
+    }
+
+    .video-play-btn {
+        width: 54px;
+        height: 54px;
+        font-size: 17px;
+    }
+
+    /* Section 9 Orange CTA Mobile */
+    .cta-banner-container {
+        padding: 60px 18px;
+    }
+
+    .cta-banner-title {
+        font-size: 42px;
+        line-height: 0.98;
+    }
+
+    .btn-cta-white {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+
+    /* Section 10 FAQ Mobile */
+    .faq-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    /* Section 11 Visit Mobile */
+    .visit-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .visit-card {
+        padding: 26px 20px;
+    }
+
+    .btn-visit-dark {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+
+    /* Section 12 Contact Banner Mobile */
+    .contact-banner-section {
+        padding: 0 16px 40px;
+    }
+
+    .contact-banner-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 32px 18px;
+    }
+
+    .contact-banner-heading {
+        font-size: 44px;
+        line-height: 0.98;
+    }
+
+    .btn-whatsapp-submit {
+        padding: 15px;
+    }
+
+    /* Footer Mobile */
+    .site-footer {
+        padding: 40px 0 25px;
+    }
+
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-top-row {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .footer-logo-col,
+    .footer-top-link-col {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-bottom-row {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+    }
+
+    .footer-legal-col {
+        justify-content: center;
+    }
+
+    .video-modal-container {
+        max-width: 92vw;
+    }
+
+    .video-modal-close {
+        top: -44px;
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    .about-text-group p {
+        font-size: 16px;
+    }
+
+    .stat-label {
+        font-size: 16px;
+    }
+
+    .text-link-dark,
+    .visit-maps-link {
+        font-size: 15px;
+    }
+
+    .pt-desc {
+        font-size: 16px;
+    }
+
+    .btn-pricing-outline {
+        font-size: 18px;
+    }
+
+    .energy-badge span {
+        font-size: 17px;
+    }
+
+    .cta-banner-subtext {
+        font-size: 16px;
+    }
+
+    .btn-cta-white {
+
+        font-size: 18px;
+    }
+
+    .faq-answer p,
+    .contact-direct-links p {
+        font-size: 16px;
+    }
+
+    .visit-subtext,
+    .visit-card-address,
+    .visit-card-note,
+    .contact-address-block,
+    .btn-whatsapp-submit {
+        font-size: 16px;
+    }
+
+    .btn-visit-dark {
+        font-size: 18px;
     }
 
     @media (max-width: 380px) {
