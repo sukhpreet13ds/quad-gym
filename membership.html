@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quad Gym - Sculpt. Transform. Conquer.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header" id="site-header">
+        <div class="nav-container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-logo" aria-label="Quad Gym Home">
+                <div class="logo-box">
+                    <img src="assets/logo.png" alt="logo of Quad Gym">
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="about-us.html" class="nav-link">About us</a></li>
+                    <li><a href="#training" class="nav-link">Training</a></li>
+                    <li><a href="membership.html" class="nav-link">Membership</a></li>
+                    <li><a href="#trainers" class="nav-link">Trainers</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop Right CTA Button -->
+            <div class="nav-actions">
+                <a href="#get-started" class="btn btn-nav">
+                    <span>LET'S GET STARTED</span>
+                    <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Animated Hamburger Button -->
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="mobile-menu-panel">
+                <span class="hamburger-line line-1"></span>
+                <span class="hamburger-line line-2"></span>
+                <span class="hamburger-line line-3"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= MOBILE MENU OVERLAY & PANEL ================= -->
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel" id="mobile-menu-panel" role="dialog" aria-modal="true"
+        aria-label="Mobile Navigation Menu">
+        <div class="mobile-menu-inner">
+            <!-- Mobile Menu Header -->
+            <div class="mobile-menu-header">
+                <a href="index.html" class="brand-logo" id="mobile-brand-logo">
+                    <div class="logo-box">
+                        <img src="assets/logo.png" alt="logo of Quad Gym">
+                    </div>
+                </a>
+
+                <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Navigation Links -->
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li>
+                        <a href="about-us.html" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-circle-info"></i> About us</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#training" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-dumbbell"></i> Training</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="membership.html" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-id-card"></i> Membership</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#trainers" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-users"></i> Trainers</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#gallery" class="mobile-nav-link">
+                            <span class="link-left"><i class="fa-solid fa-images"></i> Gallery</span>
+                            <i class="fa-solid fa-chevron-right link-arrow"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Action Button -->
+            <div class="mobile-menu-cta">
+                <a href="#get-started" class="btn btn-mobile-cta">
+                    <span>LET'S GET STARTED</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Footer Info -->
+            <div class="mobile-menu-footer">
+                <div class="mobile-social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" id="hero">
+        <!-- Background Image Container -->
+        <div class="hero-bg-wrapper">
+            <img src="assets/membership-bg.jpg" alt="Quad Gym Training Zone" class="hero-bg-img">
+            <!-- Left solid-to-transparent fade + subtle dark shade over right image -->
+            <div class="hero-gradient-overlay"></div>
+            <!-- Vertical vignette for smooth edge transitions -->
+            <div class="hero-vignette-overlay"></div>
+        </div>
+
+        <!-- Hero Main Content -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Location Tag -->
+                <div class="hero-tag animate__animated animate__fadeInUp">
+                    <span class="tag-square"></span>
+                    <span class="tag-text tag-text-6">QUAD GYM &bull; SUBHASH PALLY, WEST BENGAL</span>
+                </div>
+
+                <!-- Main Punchline Heading -->
+                <h1 class="hero-title animate__animated animate__fadeInUp">
+                    <span class="title-line title-white">MEMBERSHIP</span>
+                    <span class="title-line title-orange">PLANS</span>
+                </h1>
+
+                <!-- Subtitle Description -->
+                <p class="hero-desc animate__animated animate__fadeInUp">
+                    Show up for yourself. Build your strength, find your rhythm, and take your next step with Quad Gym.
+                </p>
+
+                <!-- Action Button Group -->
+                <div class="hero-buttons animate__animated animate__fadeInUp">
+                    <a href="#membership" class="btn btn-primary">
+                        <span>FIND YOUR MEMBERSHIP</span>
+                        <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>LET'S TALK</span>
+                        <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom-right Floating Motto/Quote -->
+            <div class="hero-bottom-quote animate__animated animate__fadeInUp">
+                <div class="quote-accent-bar"></div>
+                <div class="quote-text-group">
+                    <span class="quote-line">STRENGTH STARTS HERE.</span>
+                    <span class="quote-line">YOUR JOURNEY, YOUR PACE.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECTION 3: START SIMPLE / HOW IT WORKS ================= -->
+    <section class="steps-section" id="steps">
+        <div class="section-container">
+            <div class="section-header-split">
+                <div class="header-left">
+                    <div class="section-tag dark-tag animate__animated animate__fadeInUp">
+                        <span class="tag-square"></span>
+                        <span class="tag-text tag-text-4">YOUR FIRST STEP</span>
+                    </div>
+                    <h2 class="section-heading-dark animate__animated animate__fadeInUp">
+                        <span>START SIMPLE.</span>
+                        <span>BUILD SOMETHING STRONG.</span>
+                    </h2>
+                </div>
+                <div class="header-right">
+                    <p class="section-subtext-dark animate__animated animate__fadeInUp">
+                        You don't need to have it all figured out. Begin with a conversation, discover your direction,
+                        and take it one session at a time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card animate__animated animate__fadeInUp">
+                    <span class="step-num">01</span>
+                    <h3 class="step-title">TELL US YOUR GOAL</h3>
+                    <p class="step-desc">Getting stronger, moving more, or returning to a routine? Talk to our team
+                        about where you want to begin.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card animate__animated animate__fadeInUp">
+                    <span class="step-num">02</span>
+                    <h3 class="step-title">FIND YOUR FIT</h3>
+                    <p class="step-desc">Explore the training options and membership durations. Ask about trainer
+                        availability and personal training.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card animate__animated animate__fadeInUp">
+                    <span class="step-num">03</span>
+                    <h3 class="step-title">MAKE IT A HABIT</h3>
+                    <p class="step-desc">Choose a routine that works for you. Bring your effort, focus on good
+                        technique, and keep showing up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION 4: MEMBERSHIP / PRICING ================= -->
+    <section class="pricing-section" id="membership">
+        <div class="section-container">
+            <div class="section-header-split">
+                <div class="header-left">
+                    <div class="section-tag light-tag animate__animated animate__fadeInUp">
+                        <span class="tag-square"></span>
+                        <span class="tag-text tag-text-5">04 / HABIT OF NUMBER</span>
+                    </div>
+                    <h2 class="section-heading-light animate__animated animate__fadeInUp">
+                        <span>YOUR COMMITMENT.</span>
+                        <span>YOUR CHOICE.</span>
+                    </h2>
+                </div>
+                <div class="header-right">
+                    <p class="section-subtext-light animate__animated animate__fadeInUp">
+                        Choose the membership that fits your journey. Take the first step &mdash; we're here to help.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <div class="pricing-card animate__animated animate__fadeInUp">
+                    <div class="pricing-card-top">
+                        <span class="pricing-plan-tag">01 / START HERE</span>
+                        <div class="pricing-price-group">
+                            <span class="pricing-amount"><sup>&#8377;</sup>1,500</span>
+                        </div>
+                        <span class="pricing-duration">1 month membership</span>
+                    </div>
+                    <div class="pricing-card-bottom">
+                        <a href="#contact" class="btn btn-pricing-outline">
+                            <span>ENQUIRE NOW</span>
+                            <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="pricing-card animate__animated animate__fadeInUp">
+                    <div class="pricing-card-top">
+                        <span class="pricing-plan-tag">02 / BUILD A HABIT</span>
+                        <div class="pricing-price-group">
+                            <span class="pricing-amount"><sup>&#8377;</sup>3,500</span>
+                        </div>
+                        <span class="pricing-duration">3 months membership</span>
+                    </div>
+                    <div class="pricing-card-bottom">
+                        <a href="#contact" class="btn btn-pricing-outline">
+                            <span>ENQUIRE NOW</span>
+                            <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="pricing-card animate__animated animate__fadeInUp">
+                    <div class="pricing-card-top">
+                        <span class="pricing-plan-tag">03 / KEEP GOING</span>
+                        <div class="pricing-price-group">
+                            <span class="pricing-amount"><sup>&#8377;</sup>6,000</span>
+                        </div>
+                        <span class="pricing-duration">6 months membership</span>
+                    </div>
+                    <div class="pricing-card-bottom">
+                        <a href="#contact" class="btn btn-pricing-outline">
+                            <span>ENQUIRE NOW</span>
+                            <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plan 4 (Featured Highlight) -->
+                <div class="pricing-card animate__animated animate__fadeInUp">
+                    <div class="pricing-card-top">
+                        <div class="pricing-featured-header">
+                            <span class="pricing-plan-tag">04 / ALL IN</span>
+                            <span class="featured-badge">POPULAR</span>
+                        </div>
+                        <div class="pricing-price-group">
+                            <span class="pricing-amount"><sup>&#8377;</sup>9,000</span>
+                        </div>
+                        <span class="pricing-duration">1 year membership</span>
+                    </div>
+                    <div class="pricing-card-bottom">
+                        <a href="#contact" class="btn btn-pricing-featured">
+                            <span>ENQUIRE NOW</span>
+                            <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-footer-note animate__animated animate__fadeInUp">
+                <p>Looking for personal training? Let's discuss your goals.</p>
+                <p>Contact us to confirm membership inclusions and terms.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= SECTION 9: ORANGE CTA BANNER ================= -->
+    <section class="cta-banner-section">
+        <div class="section-container cta-banner-container">
+            <span class="cta-banner-tag animate__animated animate__fadeInUp">YOUR SEASON IS CHOSEN</span>
+            <h2 class="cta-banner-title animate__animated animate__fadeInUp">
+                <span>NOT EVERY DAY IS EASY.</span>
+                <span>EVERY STEP COUNTS.</span>
+            </h2>
+            <p class="cta-banner-subtext animate__animated animate__fadeInUp">
+                A real routine begins with one decision. Give yourself the space to learn, the room to improve, and a
+                reason to come back.
+            </p>
+            <div class="cta-banner-action animate__animated animate__fadeInUp">
+                <a href="#membership" class="btn btn-cta-white">
+                    <span>CHOOSE YOUR MEMBERSHIP</span>
+                    <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION 10: FAQ ================= -->
+    <section class="faq-section" id="faq">
+        <div class="section-container faq-container">
+            <div class="faq-header-col animate__animated animate__fadeInUp">
+                <div class="section-tag light-tag">
+                    <span class="tag-square"></span>
+                    <span class="tag-text tag-text-6">05 / BEFORE YOU BEGIN</span>
+                </div>
+                <h2 class="section-heading-light">
+                    <span>A LITTLE CLARITY.</span>
+                    <span>A CONFIDENT START.</span>
+                </h2>
+            </div>
+
+            <div class="faq-accordion-col">
+                <div class="faq-accordion">
+                    <!-- Item 1 (open by default) -->
+                    <div class="faq-item is-open animate__animated animate__fadeInUp">
+                        <button class="faq-question" aria-expanded="true">
+                            <span>How do I become a member?</span>
+                            <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Choose a plan and reach us on WhatsApp (+91 96478 69794) or visit Quad Gym. Our team will
+                                help with membership details and pricing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="faq-item animate__animated animate__fadeInUp">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is personal training available?</span>
+                            <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, personal training is available with experienced trainers who build a program
+                                customized to your fitness level, goals, and schedule.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="faq-item animate__animated animate__fadeInUp">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What training can I do at Quad Gym?</span>
+                            <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer powerlifting, functional multi-gym training, agility training, and cardio
+                                equipment tailored for all fitness levels.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="faq-item animate__animated animate__fadeInUp">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What are the gym timings?</span>
+                            <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Monday to Sunday: 6:00 AM &ndash; 10:00 PM. Special trainer hours and personal training
+                                sessions are scheduled by appointment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION 11: COME SAY HELLO ================= -->
+    <section class="visit-section" id="visit">
+        <div class="section-container visit-container">
+            <div class="visit-left-col">
+                <div class="section-tag dark-tag animate__animated animate__fadeInUp">
+                    <span class="tag-square"></span>
+                    <span class="tag-text">COME SAY HELLO</span>
+                </div>
+                <h2 class="section-heading-dark animate__animated animate__fadeInUp">
+                    <span>YOUR NEXT STOP.</span>
+                    <span>QUAD GYM.</span>
+                </h2>
+                <p class="visit-subtext animate__animated animate__fadeInUp">
+                    Find us in Subhash Pally to discuss memberships and training. Call ahead for current opening hours
+                    and trainer availability.
+                </p>
+                <a href="tel:+919749589844" class="btn btn-visit-dark animate__animated animate__fadeInUp">
+                    <span>CALL BEFORE YOUR VISIT</span>
+                    <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                </a>
+            </div>
+
+            <div class="visit-right-col animate__animated animate__fadeInUp">
+                <div class="visit-card">
+                    <h3 class="visit-card-title">PLAN YOUR VISIT</h3>
+                    <p class="visit-card-address">
+                        7, Deshbandhu Mitra Sarani, Subhash Pally, Near Union Ward No. 18, Darjeeling, West Bengal
+                        734020
+                    </p>
+                    <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="visit-maps-link">
+                        <span>SEARCH ADDRESS ON MAPS</span>
+                        <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                    </a>
+                    <p class="visit-card-note">
+                        Road entry facing out Passage. The team can give directions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION 12: MAKE TODAY YOUR DAY ONE ================= -->
+    <section class="contact-banner-section" id="contact">
+        <div class="section-container contact-banner-wrap">
+            <div class="contact-banner-card">
+                <div class="contact-banner-left animate__animated animate__fadeInUp">
+                    <div class="section-tag light-tag">
+                        <span class="tag-square" style="background-color: #fff;"></span>
+                        <span class="tag-text tag-text-3">GET YOUR BEST VERSION</span>
+                    </div>
+                    <h2 class="contact-banner-heading">
+                        <span>MAKE TODAY</span>
+                        <span>YOUR DAY ONE.</span>
+                    </h2>
+                    <div class="contact-address-block">
+                        <p>7, Deshbandhu Mitra Sarani, Subhash Pally,</p>
+                        <p>Near Union Ward No. 18, P.O. Siliguri,</p>
+                        <p>Dist: Darjeeling, West Bengal</p>
+                    </div>
+                    <div class="contact-direct-links">
+                        <p><strong>CALL:</strong> <a href="tel:+919749589844">+91 97495 89844</a></p>
+                        <p><strong>WHATSAPP:</strong> <a href="https://wa.me/919647869794" target="_blank">+91 96478
+                                69794</a></p>
+                        <p><a href="mailto:quadfitnessgym@gmail.com">quadfitnessgym@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-banner-right animate__animated animate__fadeInUp">
+                    <form class="whatsapp-lead-form" id="whatsapp-lead-form"
+                        onsubmit="event.preventDefault(); window.open('https://wa.me/919647869794?text=' + encodeURIComponent('Hi Quad Gym, I would like to enquire about membership and training!'), '_blank');">
+                        <div class="form-group">
+                            <label for="lead-name" class="visually-hidden">Your name</label>
+                            <input type="text" id="lead-name" name="name" placeholder="Your name" required
+                                class="lead-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="lead-phone" class="visually-hidden">Your phone number</label>
+                            <input type="tel" id="lead-phone" name="phone" placeholder="Your phone number" required
+                                class="lead-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="lead-interest" class="visually-hidden">Your membership</label>
+                            <input type="text" id="lead-interest" name="interest"
+                                placeholder="Your membership (e.g. 1 month / 1 year)" class="lead-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="lead-message" class="visually-hidden">Type your message here</label>
+                            <input type="text" id="lead-message" name="message" placeholder="Type your message here"
+                                class="lead-input">
+                        </div>
+                        <button type="submit" class="btn btn-whatsapp-submit">
+                            <span>CONTINUE ON WHATSAPP</span>
+                            <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Top row -->
+            <div class="footer-top-row">
+                <div class="footer-logo-col">
+                    <a href="#" class="brand-logo" aria-label="Quad Gym Home">
+                        <div class="logo-box footer-logo">
+                            <img src="assets/logo.png" alt="logo of Quad Gym">
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-motto-col">
+                    <p class="footer-motto-main">Sculpt. Transform. Conquer.</p>
+                    <p class="footer-motto-sub">One session at a time.</p>
+                </div>
+                <div class="footer-top-link-col">
+                    <a href="#hero" class="back-to-top-link">
+                        <span>BACK TO TOP</span>
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Divider line -->
+            <div class="footer-divider"></div>
+
+            <!-- Bottom row -->
+            <div class="footer-bottom-row">
+                <div class="footer-copy-col">
+                    <p>Copyright &copy; 2026 Quad Gym. All rights reserved.</p>
+                </div>
+                <div class="footer-legal-col">
+                    <a href="#" class="footer-legal-link">Privacy Policy</a>
+                    <span class="footer-legal-sep">|</span>
+                    <a href="#" class="footer-legal-link">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= TESTIMONIAL VIDEO POPOUT MODAL ================= -->
+    <div class="video-modal-backdrop" id="video-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="video-modal-container">
+            <button class="video-modal-close" id="video-modal-close" aria-label="Close video popout">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="video-modal-frame">
+                <video id="modal-video-player" controls playsinline preload="auto">
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script/script.js"></script>
+</body>
+
+</html>
