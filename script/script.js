@@ -162,4 +162,59 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // ================= SCROLL-TRIGGERED ANIMATIONS =================
+    const animatedElements = document.querySelectorAll('.animate__animated');
+
+    if ('IntersectionObserver' in window && animatedElements.length > 0) {
+        animatedElements.forEach((el) => {
+            const animClasses = Array.from(el.classList).filter(
+                (c) => c.startsWith('animate__') && c !== 'animate__animated'
+            );
+
+            if (animClasses.length > 0) {
+                el.dataset.animClasses = animClasses.join(' ');
+
+                // If element is already in the viewport on initial page load (e.g., hero), allow it to play
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    return;
+                }
+
+                // Below fold: hide until scrolled into view
+                animClasses.forEach((c) => el.classList.remove(c));
+                el.style.opacity = '0';
+                el.style.visibility = 'hidden';
+            }
+        });
+
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const savedClasses = el.dataset.animClasses;
+                    if (savedClasses) {
+                        el.style.opacity = '';
+                        el.style.visibility = '';
+                        savedClasses.split(' ').forEach((c) => {
+                            if (c) el.classList.add(c);
+                        });
+                    }
+                    observer.unobserve(el);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        animatedElements.forEach((el) => {
+            if (el.dataset.animClasses) {
+                const rect = el.getBoundingClientRect();
+                if (rect.top >= window.innerHeight || rect.bottom <= 0) {
+                    scrollObserver.observe(el);
+                }
+            }
+        });
+    }
 });

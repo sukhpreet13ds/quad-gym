@@ -2212,3 +2212,35 @@ font-size: 11px;
     object-fit: cover;
     display: block;
 }
+
+/* ==========================================================================
+   ANIMATE.CSS CUSTOM ENHANCEMENTS
+   ========================================================================== */
+
+:root {
+    --animate-duration: 0.85s;
+    --animate-delay: 0.15s;
+}
+
+/* Ensure slideOutLeft behaves as an entrance animation from left into view */
+@keyframes quadSlideInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate__slideOutLeft {
+    animation-name: quadSlideInLeft !important;
+}
+
+/* Ensure smooth hardware acceleration for animated elements */
+.animate__animated {
+    will-change: transform, opacity;
+}
+
