@@ -210,6 +210,19 @@
         font-size: 36px;
     }
 
+    .gallery-collage-grid {
+        column-count: 3;
+        column-gap: 18px;
+    }
+
+    .lightbox-prev-btn {
+        left: -35px;
+    }
+
+    .lightbox-next-btn {
+        right: -35px;
+    }
+
     .training-cards-grid {
         gap: 18px;
     }
@@ -421,6 +434,30 @@
     .about-story-image-col {
         max-width: 600px;
         margin: 0 auto;
+    }
+
+    .grid-gallery-section {
+        padding: 70px 0 90px;
+    }
+
+    .gallery-collage-grid {
+        column-count: 2;
+        column-gap: 16px;
+    }
+
+    .lightbox-arrow {
+        width: 44px;
+        height: 44px;
+        font-size: 17px;
+        background: rgba(18, 20, 18, 0.88);
+    }
+
+    .lightbox-prev-btn {
+        left: 12px;
+    }
+
+    .lightbox-next-btn {
+        right: 12px;
     }
 
     .training-cards-grid {
@@ -635,6 +672,19 @@
 
     .visit-maps-link {
         font-size: 16px
+    }
+
+    .contact-page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-us-section-page {
+        padding-top: 0;
+    }
+
+    .contact-form-col,
+    .contact-info-col {
+        padding: 22px 22px;
     }
 }
 
@@ -925,6 +975,60 @@
     .about-story-action .btn {
         width: 100%;
         justify-content: center;
+    }
+
+    /* Gallery Mobile */
+    .grid-gallery-section {
+        padding: 55px 0 75px;
+    }
+
+    .gallery-filter-bar {
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+
+    .gallery-filter-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .gallery-collage-grid {
+        column-count: 1;
+        column-gap: 0;
+    }
+
+    .gallery-item {
+        margin-bottom: 16px;
+    }
+
+    .lightbox-close-btn {
+        top: -46px;
+        right: 0;
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .lightbox-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .lightbox-prev-btn {
+        left: 8px;
+    }
+
+    .lightbox-next-btn {
+        right: 8px;
+    }
+
+    .lightbox-image-frame {
+        max-height: 74vh;
+    }
+
+    #lightbox-main-img {
+        max-height: 74vh;
     }
 
     /* Section 2 Mobile */
@@ -1235,6 +1339,37 @@
 
     .btn-visit-dark {
         font-size: 18px;
+    }
+
+    /* Terms & Policy Mobile */
+    .terms-policy {
+        padding: 50px 0 70px;
+    }
+
+    .terms-policy-content {
+        padding: 28px 20px;
+    }
+
+    .terms-policy-content h2 {
+        font-size: 21px;
+    }
+
+    .terms-policy-content p,
+    .terms-policy-content ul li {
+        font-size: 14.5px;
+    }
+
+    .contact-page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-us-section-page {
+        padding-top: 0;
+    }
+
+    .contact-form-col,
+    .contact-info-col {
+        padding: 22px 22px;
     }
 
     @media (max-width: 380px) {
