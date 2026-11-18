@@ -1372,6 +1372,23 @@
         padding: 22px 22px;
     }
 
+    /* Floating Contact Stack Mobile */
+    .floating-contact-stack {
+        right: 14px;
+        bottom: 16px;
+        gap: 10px;
+    }
+
+    .floating-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 19px;
+    }
+
+    .floating-tooltip {
+        display: none;
+    }
+
     @media (max-width: 380px) {
         .logo-box img {
             height: 32px;

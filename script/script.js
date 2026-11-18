@@ -437,45 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Inner pages: activate current page's nav item
         setActiveLinks(currentPath);
     } else {
-        // Homepage: scrollspy for sections corresponding to nav links
-        const sectionsConfig = [
-            { id: 'about', href: 'about-us.html' },
-            { id: 'training', href: 'training.html' },
-            { id: 'membership', href: 'membership.html' },
-            { id: 'trainers', href: 'trainers.html' },
-            { id: 'gallery', href: 'gallery.html' },
-            { id: 'contact', href: 'contact-us.html' }
-        ];
-
-        const handleHomeScrollSpy = () => {
-            const scrollPos = window.scrollY || window.pageYOffset;
-            const headerHeight = siteHeader ? siteHeader.offsetHeight : 84;
-
-            if (scrollPos < 250) {
-                // At top hero banner
-                setActiveLinks('');
-                return;
-            }
-
-            let currentActiveHref = '';
-            for (let i = 0; i < sectionsConfig.length; i++) {
-                const section = document.getElementById(sectionsConfig[i].id);
-                if (section) {
-                    const top = section.offsetTop - headerHeight - 100;
-                    const bottom = top + section.offsetHeight;
-                    if (scrollPos >= top && scrollPos < bottom) {
-                        currentActiveHref = sectionsConfig[i].href;
-                        break;
-                    }
-                }
-            }
-
-            if (currentActiveHref) {
-                setActiveLinks(currentActiveHref);
-            }
-        };
-
-        window.addEventListener('scroll', handleHomeScrollSpy, { passive: true });
-        handleHomeScrollSpy();
+        // Homepage: keep nav links clean (no scrollspy)
+        setActiveLinks('');
     }
 });
